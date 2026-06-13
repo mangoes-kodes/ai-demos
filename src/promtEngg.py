@@ -29,3 +29,5 @@ chain = prompt_template | llm | output_parser
 
 if input_text.strip():
     st.write(chain.invoke({"illness": input_text.strip()}))
+
+# minor changes
