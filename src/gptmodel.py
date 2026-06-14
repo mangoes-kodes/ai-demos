@@ -31,11 +31,11 @@
 #     "reasoning": {"enabled": True}
 #   })
 # )
- 
-# print("\n", response.status_code) 
+
+# print("\n", response.status_code)
 # response = response.json()
-# print("\n", response) 
-# print("\n") 
+# print("\n", response)
+# print("\n")
 # response = response['choices'][0]['message']
 
 # messages = [
@@ -43,7 +43,7 @@
 #   {
 #     "role": "assistant",
 #     "content": response.get('content'),
-#     "reasoning_details": response.get('reasoning_details') 
+#     "reasoning_details": response.get('reasoning_details')
 #   },
 #   {"role": "user", "content": "Are you sure? Think carefully."}
 # ]
@@ -51,7 +51,6 @@
 
 import os
 from dotenv import load_dotenv
-
 from langchain_openai import ChatOpenAI
 from langchain_core.messages import HumanMessage, AIMessage
 
@@ -61,7 +60,7 @@ llm = ChatOpenAI(
     model="openai/gpt-oss-20b:free",
     base_url="https://openrouter.ai/api/v1",
     api_key=os.getenv("OPENROUTER_API_KEY"),
-    temperature=0.6
+    temperature=0.6,
 )
 
 chat_history = []
