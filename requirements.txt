@@ -6,7 +6,11 @@ boto3
 streamlit
 transformers
 pyYaml
-langchain-community
 langchain-openai
 python-dotenv
 torch
+pypdf
+type_extensions
+pypdf2
+langchain-ollama
+chromadb

@@ -25,7 +25,7 @@ st.title('Langchain Demo With LLAMA2 API')
 input_text=st.text_input("Search the topic u want")
 
 # ollama LLAma2 LLm 
-llm=Ollama(model="llama2", temperature=0.9, max_tokens=1000)
+llm=Ollama(model="llama2", temperature=0.9, max_tokens=100)
 output_parser=StrOutputParser()
 chain=prompt|llm|output_parser
 
